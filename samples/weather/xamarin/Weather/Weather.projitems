@@ -30,11 +30,20 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\BaseWeatherService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Bootstrap.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\NewtonsoftJsonSerializer.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Keys.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OutputStreamMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServiceConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\WeatherIcons.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)Services\" />
     <Folder Include="$(MSBuildThisFileDirectory)Services\Abstractions\" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\WeatherViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Models\WeatherIcons.xml" />
   </ItemGroup>
 </Project>
